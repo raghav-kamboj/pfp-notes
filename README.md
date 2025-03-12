@@ -1,4 +1,3 @@
-# pfp-notes
 # Python Notes
 
 ## 1. Language Features
@@ -90,26 +89,33 @@
 - **Strings (`str`)**: Ordered collection of characters.
   ```python
   name = "Python"
+  print(name[0])  # Accessing first character
+  print(name.upper())  # Convert to uppercase
   ```
 - **Lists (`list`)**: Ordered, mutable collection.
   ```python
   fruits = ["apple", "banana", "cherry"]
+  fruits.append("mango")
+  print(fruits)
   ```
 - **Tuples (`tuple`)**: Ordered, immutable collection.
   ```python
   coordinates = (10, 20)
+  print(coordinates[0])
   ```
 
 ### Set Types
 - **Sets (`set`)**: Unordered, unique elements.
   ```python
   unique_numbers = {1, 2, 3, 3}
+  print(unique_numbers)
   ```
 
 ### Mapping Types
 - **Dictionaries (`dict`)**: Key-value pairs.
   ```python
   student = {"name": "John", "age": 20}
+  print(student["name"])
   ```
 
 ## 12. Data Type Conversions
@@ -117,6 +123,7 @@
   ```python
   num = "10"
   num_int = int(num)  # Converts string to integer
+  print(num_int)
   ```
 
 ## 13. Operators
@@ -125,6 +132,11 @@
 - **Logical**: `and`, `or`, `not`.
 - **Bitwise**: `&`, `|`, `^`, `<<`, `>>`.
 - **Assignment**: `=`, `+=`, `-=`, `*=`.
+  ```python
+  x = 5
+  x += 3  # Equivalent to x = x + 3
+  print(x)
+  ```
 
 ## 14. Control Flow Statements
 ### Conditional Statements
